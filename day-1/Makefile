@@ -1,0 +1,2 @@
+os:
+	bash make.sh
