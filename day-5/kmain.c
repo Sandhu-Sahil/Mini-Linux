@@ -29,5 +29,5 @@ void kmain(void){
 
 	dev_write(0, s, sizeof(s));
 
-	dev_write(1, s, sizeof(s));
+	// dev_write(1, s, sizeof(s));
 }

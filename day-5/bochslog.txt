@@ -44,45 +44,45 @@
 00000000000i[USBCTL] Pluggable USB devices
 00000000000i[USBCTL]   hub floppy printer mouse tablet keypad keyboard disk
 00000000000i[USBCTL]   cdrom
-00000000000i[MEM0  ] allocated memory at 0x7fbba15dc010. after alignment, vector=0x7fbba15dd000
+00000000000i[MEM0  ] allocated memory at 0x7f9ebdddd010. after alignment, vector=0x7f9ebddde000
 00000000000i[MEM0  ] 32.00MB
 00000000000i[MEM0  ] mem block size = 0x00020000, blocks=256
 00000000000i[MEM0  ] rom at 0xffff0000/65536 ('/usr/share/bochs/BIOS-bochs-legacy')
 00000000000i[CPU0  ] WARNING: 3DNow! is not implemented yet !
 00000000000i[DEV   ] will paste characters every 100 iodev timer ticks
-00000000000i[      ] lt_dlhandle is 0x5590b5416c20
+00000000000i[      ] lt_dlhandle is 0x5567e20a17b0
 00000000000i[PLUGIN] loaded plugin libbx_soundalsa.so
 00000000000i[WAVOUT] ALSA: opened default PCM output device
 00000000000i[WAVOUT] changed sample rate to 44101
-00000000000i[      ] lt_dlhandle is 0x5590b5bce410
+00000000000i[      ] lt_dlhandle is 0x5567e2859490
 00000000000i[PLUGIN] loaded plugin libbx_pci.so
-00000000000i[      ] lt_dlhandle is 0x5590b5416d00
+00000000000i[      ] lt_dlhandle is 0x5567e20a1890
 00000000000i[PLUGIN] loaded plugin libbx_pci2isa.so
-00000000000i[      ] lt_dlhandle is 0x5590b540eac0
+00000000000i[      ] lt_dlhandle is 0x5567e2099590
 00000000000i[PLUGIN] loaded plugin libbx_usb_uhci.so
-00000000000i[      ] lt_dlhandle is 0x5590b5393760
+00000000000i[      ] lt_dlhandle is 0x5567e201e240
 00000000000i[PLUGIN] loaded plugin libbx_acpi.so
-00000000000i[      ] lt_dlhandle is 0x5590b53939d0
+00000000000i[      ] lt_dlhandle is 0x5567e201e4b0
 00000000000i[PLUGIN] loaded plugin libbx_hpet.so
-00000000000i[      ] lt_dlhandle is 0x5590b5bd8bc0
+00000000000i[      ] lt_dlhandle is 0x5567e2863c40
 00000000000i[PLUGIN] loaded plugin libbx_cmos.so
-00000000000i[      ] lt_dlhandle is 0x5590b5bd93d0
+00000000000i[      ] lt_dlhandle is 0x5567e2864450
 00000000000i[PLUGIN] loaded plugin libbx_dma.so
-00000000000i[      ] lt_dlhandle is 0x5590b5bd9be0
+00000000000i[      ] lt_dlhandle is 0x5567e2864dc0
 00000000000i[PLUGIN] loaded plugin libbx_pic.so
-00000000000i[      ] lt_dlhandle is 0x5590b5bda3a0
+00000000000i[      ] lt_dlhandle is 0x5567e2865580
 00000000000i[PLUGIN] loaded plugin libbx_pit.so
-00000000000i[      ] lt_dlhandle is 0x5590b5bdadc0
+00000000000i[      ] lt_dlhandle is 0x5567e2865fa0
 00000000000i[PLUGIN] loaded plugin libbx_vga.so
-00000000000i[      ] lt_dlhandle is 0x5590b5bfc400
+00000000000i[      ] lt_dlhandle is 0x5567e28875e0
 00000000000i[PLUGIN] loaded plugin libbx_floppy.so
-00000000000i[      ] lt_dlhandle is 0x5590b5bfcc40
+00000000000i[      ] lt_dlhandle is 0x5567e2887e20
 00000000000i[PLUGIN] loaded plugin libbx_ioapic.so
-00000000000i[      ] lt_dlhandle is 0x5590b5bfd450
+00000000000i[      ] lt_dlhandle is 0x5567e2888630
 00000000000i[PLUGIN] loaded plugin libbx_keyboard.so
-00000000000i[      ] lt_dlhandle is 0x5590b5bfdd50
+00000000000i[      ] lt_dlhandle is 0x5567e2888f30
 00000000000i[PLUGIN] loaded plugin libbx_harddrv.so
-00000000000i[      ] lt_dlhandle is 0x5590b5bffe20
+00000000000i[      ] lt_dlhandle is 0x5567e288b000
 00000000000i[PLUGIN] loaded plugin libbx_pci_ide.so
 00000000000i[PLUGIN] init_dev of 'pci' plugin device by virtual method
 00000000000i[DEV   ] i440FX PMC present at device 0, function 0
@@ -90,7 +90,7 @@
 00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS  ] Using local time for initial clock
-00000000000i[CMOS  ] Setting initial clock to: Wed Oct 11 23:18:24 2023 (time0=1697046504)
+00000000000i[CMOS  ] Setting initial clock to: Sun Oct 22 18:48:17 2023 (time0=1697980697)
 00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA   ] channel 4 used by cascade
 00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -248,80 +248,74 @@
 00000443533i[BXVGA ] VBE known Display Interface b0c5
 00000446176i[VBIOS ] VBE Bios $Id: vbe.c 292 2021-06-03 12:24:22Z vruppert $
 00004098507i[BIOS  ] IDE time out
-00183436716i[BIOS  ] Booting from 07c0:0000
-00183531836i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=80
-00183535507i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=80
-00183539178i[BIOS  ] *** int 15h function AX=00c0, BX=0000 not yet supported!
-00184795146i[SER   ] com1: FIFO enabled
-00185211449e[SER   ] Could not open 'com1.out' to write com1 output
-00185211529e[SER   ] com1: transmit FIFO overflow
-00185211549e[SER   ] com1: transmit FIFO overflow
-00185211569e[SER   ] com1: transmit FIFO overflow
-00185211589e[SER   ] com1: transmit FIFO overflow
-00185211609e[SER   ] com1: transmit FIFO overflow
-00185211629e[SER   ] com1: transmit FIFO overflow
-00185211649e[SER   ] com1: transmit FIFO overflow
-00185211669e[SER   ] com1: transmit FIFO overflow
-00185211689e[SER   ] com1: transmit FIFO overflow
-00185211709e[SER   ] com1: transmit FIFO overflow
-00185211729e[SER   ] com1: transmit FIFO overflow
-00185211749e[SER   ] com1: transmit FIFO overflow
-00185211769e[SER   ] com1: transmit FIFO overflow
-00185211789e[SER   ] com1: transmit FIFO overflow
-00185211809e[SER   ] com1: transmit FIFO overflow
-00185211829e[SER   ] com1: transmit FIFO overflow
-00185211849e[SER   ] com1: transmit FIFO overflow
-00185211869e[SER   ] com1: transmit FIFO overflow
-00185211889e[SER   ] com1: transmit FIFO overflow
-00185211909e[SER   ] com1: transmit FIFO overflow
-00185211929e[SER   ] com1: transmit FIFO overflow
-00185211949e[SER   ] com1: transmit FIFO overflow
-00185211969e[SER   ] com1: transmit FIFO overflow
-00185211989e[SER   ] com1: transmit FIFO overflow
-00185212009e[SER   ] com1: transmit FIFO overflow
-00185212029e[SER   ] com1: transmit FIFO overflow
-00185212049e[SER   ] com1: transmit FIFO overflow
-00185212069e[SER   ] com1: transmit FIFO overflow
-00185212089e[SER   ] com1: transmit FIFO overflow
-00185212109e[SER   ] com1: transmit FIFO overflow
-00185212129e[SER   ] com1: transmit FIFO overflow
-00185212149e[SER   ] com1: transmit FIFO overflow
-00185212169e[SER   ] com1: transmit FIFO overflow
-00185212189e[SER   ] com1: transmit FIFO overflow
-00185212209e[SER   ] com1: transmit FIFO overflow
-00185212229e[SER   ] com1: transmit FIFO overflow
-00185212249e[SER   ] com1: transmit FIFO overflow
-00185212269e[SER   ] com1: transmit FIFO overflow
-00185212289e[SER   ] com1: transmit FIFO overflow
-00185212309e[SER   ] com1: transmit FIFO overflow
-00185212329e[SER   ] com1: transmit FIFO overflow
-00185212349e[SER   ] com1: transmit FIFO overflow
-00185212369e[SER   ] com1: transmit FIFO overflow
-00185212389e[SER   ] com1: transmit FIFO overflow
-00185212409e[SER   ] com1: transmit FIFO overflow
-00185212429e[SER   ] com1: transmit FIFO overflow
-00185212449e[SER   ] com1: transmit FIFO overflow
-00185212469e[SER   ] com1: transmit FIFO overflow
-00185212489e[SER   ] com1: transmit FIFO overflow
-00185212509e[SER   ] com1: transmit FIFO overflow
-00185212529e[SER   ] com1: transmit FIFO overflow
-00309619000p[SDL2  ] >>PANIC<< POWER button turned off.
-00309619000i[CPU0  ] CPU is in protected mode (active)
-00309619000i[CPU0  ] CS.mode = 32 bit
-00309619000i[CPU0  ] SS.mode = 32 bit
-00309619000i[CPU0  ] EFER   = 0x00000000
-00309619000i[CPU0  ] | EAX=00000044  EBX=0002cd80  ECX=0000000f  EDX=000003f8
-00309619000i[CPU0  ] | ESP=00067ed0  EBP=00067ee0  ESI=0002ced8  EDI=0002ced9
-00309619000i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf zf af PF cf
-00309619000i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
-00309619000i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
-00309619000i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00309619000i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00309619000i[CPU0  ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00309619000i[CPU0  ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00309619000i[CPU0  ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00309619000i[CPU0  ] | EIP=00100876 (00100876)
-00309619000i[CPU0  ] | CR0=0x60000011 CR2=0x00000000
-00309619000i[CPU0  ] | CR3=0x00000000 CR4=0x00000000
-00309619000i[CMOS  ] Last time is 1697046813 (Wed Oct 11 23:23:33 2023)
-00309619000i[SIM   ] quit_sim called with exit code 1
+00153839406i[BIOS  ] Booting from 07c0:0000
+00153934526i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=80
+00153938197i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=80
+00153941868i[BIOS  ] *** int 15h function AX=00c0, BX=0000 not yet supported!
+00155197819i[SER   ] com1: FIFO enabled
+00155614222e[SER   ] com1: transmit FIFO overflow
+00155614242e[SER   ] com1: transmit FIFO overflow
+00155614262e[SER   ] com1: transmit FIFO overflow
+00155614282e[SER   ] com1: transmit FIFO overflow
+00155614302e[SER   ] com1: transmit FIFO overflow
+00155614322e[SER   ] com1: transmit FIFO overflow
+00155614342e[SER   ] com1: transmit FIFO overflow
+00155614362e[SER   ] com1: transmit FIFO overflow
+00155614402e[SER   ] com1: transmit FIFO overflow
+00155614422e[SER   ] com1: transmit FIFO overflow
+00155614442e[SER   ] com1: transmit FIFO overflow
+00155614462e[SER   ] com1: transmit FIFO overflow
+00155614482e[SER   ] com1: transmit FIFO overflow
+00155614502e[SER   ] com1: transmit FIFO overflow
+00155614522e[SER   ] com1: transmit FIFO overflow
+00155614542e[SER   ] com1: transmit FIFO overflow
+00155614562e[SER   ] com1: transmit FIFO overflow
+00155614582e[SER   ] com1: transmit FIFO overflow
+00155614602e[SER   ] com1: transmit FIFO overflow
+00155614622e[SER   ] com1: transmit FIFO overflow
+00155614662e[SER   ] com1: transmit FIFO overflow
+00155614682e[SER   ] com1: transmit FIFO overflow
+00155614702e[SER   ] com1: transmit FIFO overflow
+00155614722e[SER   ] com1: transmit FIFO overflow
+00155614742e[SER   ] com1: transmit FIFO overflow
+00155614762e[SER   ] com1: transmit FIFO overflow
+00155614782e[SER   ] com1: transmit FIFO overflow
+00155614802e[SER   ] com1: transmit FIFO overflow
+00155614822e[SER   ] com1: transmit FIFO overflow
+00155614842e[SER   ] com1: transmit FIFO overflow
+00155614862e[SER   ] com1: transmit FIFO overflow
+00155614882e[SER   ] com1: transmit FIFO overflow
+00155614922e[SER   ] com1: transmit FIFO overflow
+00155614942e[SER   ] com1: transmit FIFO overflow
+00155614962e[SER   ] com1: transmit FIFO overflow
+00155614982e[SER   ] com1: transmit FIFO overflow
+00155615002e[SER   ] com1: transmit FIFO overflow
+00155615022e[SER   ] com1: transmit FIFO overflow
+00155615042e[SER   ] com1: transmit FIFO overflow
+00155615062e[SER   ] com1: transmit FIFO overflow
+00155615082e[SER   ] com1: transmit FIFO overflow
+00155615102e[SER   ] com1: transmit FIFO overflow
+00155615122e[SER   ] com1: transmit FIFO overflow
+00155615142e[SER   ] com1: transmit FIFO overflow
+00155615182e[SER   ] com1: transmit FIFO overflow
+00155615202e[SER   ] com1: transmit FIFO overflow
+00426355000p[SDL2  ] >>PANIC<< POWER button turned off.
+00426355000i[CPU0  ] CPU is in protected mode (active)
+00426355000i[CPU0  ] CS.mode = 32 bit
+00426355000i[CPU0  ] SS.mode = 32 bit
+00426355000i[CPU0  ] EFER   = 0x00000000
+00426355000i[CPU0  ] | EAX=00000044  EBX=0002cd80  ECX=0000000f  EDX=000003f8
+00426355000i[CPU0  ] | ESP=00067ed0  EBP=00067ee0  ESI=0002ced8  EDI=0002ced9
+00426355000i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf zf af PF cf
+00426355000i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
+00426355000i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00426355000i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00426355000i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00426355000i[CPU0  ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00426355000i[CPU0  ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00426355000i[CPU0  ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00426355000i[CPU0  ] | EIP=00100876 (00100876)
+00426355000i[CPU0  ] | CR0=0x60000011 CR2=0x00000000
+00426355000i[CPU0  ] | CR3=0x00000000 CR4=0x00000000
+00426355000i[CMOS  ] Last time is 1697981123 (Sun Oct 22 18:55:23 2023)
+00426355000i[SIM   ] quit_sim called with exit code 1

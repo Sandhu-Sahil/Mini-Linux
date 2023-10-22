@@ -2,6 +2,8 @@ ENTRY(loader)                /* the name of the entry label */
 
 SECTIONS {
     . = 0x00100000;          /* the code should be loaded at 1 MB */
+    kernel_virtual_start = .;
+    kernel_physical_start = . - 0xC0000000;
 
     .text ALIGN (0x4) :   /* align at 4 KB */
     {
@@ -23,4 +25,7 @@ SECTIONS {
         *(COMMON)            /* all COMMON sections from all files */
         *(.bss)              /* all bss sections from all files */
     }
+
+    kernel_virtual_start = .;
+    kernel_physical_start = . - 0xC0000000;
 }
