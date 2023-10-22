@@ -132,5 +132,15 @@ void serial_write(unsigned char *b, unsigned short len){
 		outb(SERIAL_COM1_BASE, b[i++]);
 	}
 	// unsigned char received_char = serial_read_char();
+	// unsigned char a1 = serial_read_char();
+	// unsigned char a2 = serial_read_char();
+	// unsigned char a3 = serial_read_char();
+	// unsigned char a4 = serial_read_char();
+	// unsigned char a5 = serial_read_char();
 	// dev_write(0, &received_char, sizeof(received_char));
+	// dev_write(0, &a1, sizeof(a1));
+	// dev_write(0, &a2, sizeof(a2));
+	// dev_write(0, &a3, sizeof(a3));
+	// dev_write(0, &a4, sizeof(a4));
+	// dev_write(0, &a5, sizeof(a5));
 }
