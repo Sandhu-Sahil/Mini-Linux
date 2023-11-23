@@ -1,0 +1,106 @@
+c[?7l[2J[0mSeaBIOS (version 1.15.0-1)
+
+
+iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+BFF8B4A0+BFECB4A0 CA00
+Press Ctrl-B to configure iPXE (PCI 00:03.0)...                                                                               
+
+
+Booting from Hard Disk...
+Boot failed: could not read the boot disk
+
+Booting from Floppy...
+Boot failed: could not read the boot disk
+
+Booting from DVD/CD...
+Loading stage2 ....
+[01;01H[2J
+    GNU GRUB  version 0.95  (639K lower / 3144576K upper memory)[04;02H┌─────────────────────────────────────────────────────────────────────────┐[05;02H│[05;76H│[06;02H│[06;76H│[07;02H│[07;76H│[08;02H│[08;76H│[09;02H│[09;76H│[10;02H│[10;76H│[11;02H│[11;76H│[12;02H│[12;76H│[13;02H│[13;76H│[14;02H│[14;76H│[15;02H│[15;76H│[16;02H│[16;76H│[17;02H└───────────────────────────────────────────────────────[17;57H[17;58H──────────────────┘
+      Use the ↑ and ↓ keys to select which entry is highlighted.
+      Press enter to boot the selected OS, 'e' to edit the
+      commands before booting, or 'c' for a command-line.[05;78H [05;03H[0;30;47m os                                                                      [06;03H[0m                                                                         [07;03H                                                                         [08;03H [08;03H[08;04H                                                                        [09;03H                                                                         [10;03H                                                                         [11;03H                                                                         [12;03H                                                                         [13;03H                                                                         [14;03H                                                                         [15;03H                                                                         [16;03H                                                                         [16;78H [01;01H[2J  Booting 'os'
+
+kernel /boot/kernel.elf
+   [Multiboot-elf, <0x1[04;23H[04;24H00000:0x498b:0x0>, <0x105000:0x14e0:0x0>, <0x107000:0xa1
+0:0x225c>, shtab=0x10a230, entry=0x100d7c]
+module /modules/initrd
+   [Multiboot-module @ 0x10c000, 0x1349 bytes
+==============================
+Testing COM port... it works!!!
+
+==============================
+Testing Interrupt by raising interrupt 34
+Recieved interrupt 34!!
+
+
+==============================
+Testing paging, trying to access address 
+Testing paging, trying to access address 1155104
+
+Recieved interrupt 14!!
+Page fault! ( ) at address = 1155104
+Creating page at address 1155104
+Out of page fault, page allocation works!!!
+
+==============================
+Testing kernel heap.... 
+==============================
+Testing kernel malloc.... 
+Calling kmalloc() for allocating 8 bytes
+kmalloc() allocated 8 bytes at address: 3221762116
+
+Calling kmalloc() for allocating 10 bytes
+kmalloc() allocated 10 bytes at address: 3221762144
+
+Calling kmalloc() for allocating 8 bytes
+kmalloc() allocated 8 bytes at address: 3221762174
+
+==============================
+Testing kernel free.... 
+Calling kfree() to deallocate address: 3221762116
+
+Calling kmalloc() for allocating 20 bytes
+kmalloc() allocated 20 bytes at address: 3221762202
+
+Calling kmalloc() for allocating 8 bytes
+kmalloc() allocated 8 bytes at address: 3221762116
+
+==============================
+Testing Multiboot...
+Mboot address loaded at 183680
+Initrd loaded at address 1097728
+Multiboot modules end at address 1102665
+Number of modules loaded = 1
+
+==============================
+Testing virtual file system
+reading contents of directory /dev
+
+Found file -> file1.txt
+	 contents: Hello, you just loaded first file from VFS!
+
+
+Found file -> file2.txt
+	 contents: This is the second file!
+
+
+
+==============================
+Testing multitasking
+Calling process fork
+
+
+==============================
+fork() returned 2, and getpid() returned 1
+============================================================================
+
+==============================
+Keyboard Enabled, type something!!!!
+
+
+==============================
+fork() returned 0, and getpid() returned 2
+============================================================================
+
+==============================
+Keyboard Enabled, type something!!!!
+qemu-system-i386: terminating on signal 15 from pid 1902 (/lib/systemd/systemd)
